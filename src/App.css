@@ -135,13 +135,6 @@ footer {
 
 /* Login Component */
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    justify-content: center;
-}
-
 .forms-section {
     display: flex;
     flex-direction: column;
@@ -193,6 +186,14 @@ footer {
     49.999% {
         z-index: 1;
     }
+}
+
+
+.forms-section *,
+.forms-section *::before,
+.forms-section *::after {
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .switcher {

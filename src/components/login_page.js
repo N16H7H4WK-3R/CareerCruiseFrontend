@@ -8,6 +8,7 @@ function LoginPage() {
     };
 
     return (
+        <div className="login_screen">
         <section className="forms-section">
             <h1 class="section-title">Employer Credentials Page</h1>
             <div className="forms">
@@ -69,6 +70,7 @@ function LoginPage() {
                 </div>
             </div>
         </section>
+        </div>
     );
 }
 
