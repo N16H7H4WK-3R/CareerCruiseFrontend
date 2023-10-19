@@ -2,7 +2,7 @@ import React from 'react'
 
 function LandingPage() {
     return (
-        <div className='landing_screen'>
+        <div className='screen'>
             <header>
                 <section className="banner1">
                     <header>
