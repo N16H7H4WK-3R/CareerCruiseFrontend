@@ -385,7 +385,7 @@ footer {
 
 .input-block label {
     font-size: 14px;
-    color: #a1b4b4;
+    color: #000;
 }
 
 .input-block input {
@@ -394,12 +394,13 @@ footer {
     margin-top: 8px;
     padding-right: 15px;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 40px;
     color: #3b4465;
     background: #eef9fe;
     border: 1px solid #cddbef;
     border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form [type='submit'] {

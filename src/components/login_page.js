@@ -26,7 +26,7 @@ function LoginPage() {
                             <legend>Please, enter your email and password for login.</legend>
                             <div className="input-block">
                                 <label htmlFor="login-email">E-mail</label>
-                                <input id="login-email" type="email" required />
+                                <input id="login-email" type="email" spellcheck="false" required autocomplete="off" />
                             </div>
                             <div className="input-block">
                                 <label htmlFor="login-password">Password</label>
