@@ -1,6 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function LandingPage() {
+    const navigate = useNavigate();
+
+    const handleEmployer = () => {
+        navigate('/E-login');
+    };
+
+    const handleCompany = () => {
+        navigate('/C-login');
+    };
+
+
     return (
         <div className='screen'>
             <header>
@@ -12,8 +24,8 @@ function LandingPage() {
                         </p>
                     </header>
                     <div className='main' >
-                        <button>Employer</button>
-                        <button>Company</button>
+                        <button onClick={handleEmployer} >Employer</button>
+                        <button onClick={handleCompany} >Company</button>
                     </div>
                 </section>
                 <section className="banner2">

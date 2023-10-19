@@ -10,7 +10,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path='/login' element={<LoginPage />} />
+          <Route path='/C-login' element={<LoginPage name="Company" />} />
+          <Route path='/E-login' element={<LoginPage name="Employer" />} />
         </Routes>
       </Router>
     </>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-function LoginPage() {
+
+function LoginPage(props) {
     const [activeForm, setActiveForm] = useState('login');
 
     const switchForm = (form) => {
@@ -10,7 +11,7 @@ function LoginPage() {
     return (
         <div className="login_screen">
         <section className="forms-section">
-            <h1 class="section-title">Employer Credentials Page</h1>
+            <h1 class="section-title">{props.name} Credentials Page</h1>
             <div className="forms">
                 <div className={`form-wrapper ${activeForm === 'login' ? 'is-active' : ''}`}>
                     <button
