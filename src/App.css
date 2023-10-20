@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
 /* body */
 
 body {
@@ -47,8 +49,9 @@ section>* {
     border: 0;
     border: 1px solid #FFF;
     color: #FFF;
+    letter-spacing: 3px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     position: relative;
     z-index: 0;
 }
