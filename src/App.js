@@ -2,9 +2,10 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/landing_page';
-import LoginPage from './components/login_page';
-import NavbarComponent from './components/navbar';
 import EmployerDashboard from './components/employer_dashboard';
+import CompanyDashboard from './components/company_dashboard';
+import CompanyLoginPage from './components/company_login_page';
+import EmployerLoginPage from './components/employer_login_page';
 
 function App() {
   return (
@@ -12,10 +13,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path='/C-login' element={<LoginPage name="Company" />} />
-          <Route path='/E-login' element={<LoginPage name="Employer" />} />
-          <Route path='/nav' element={<NavbarComponent />} />
-          <Route path='/user' element={<EmployerDashboard/>} />
+          <Route path='/C-login' element={<CompanyLoginPage />} />
+          <Route path='/E-login' element={<EmployerLoginPage />} />
+          <Route path='/employer' element={<EmployerDashboard />} />
+          <Route path='/company' element={<CompanyDashboard />} />
         </Routes>
       </Router>
     </>

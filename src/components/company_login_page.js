@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function LoginPage(props) {
+function CompanyLoginPage() {
     const [activeForm, setActiveForm] = useState('login');
     const [loginEmail, setLoginEmail] = useState('');
     const [loginPassword, setLoginPassword] = useState('');
@@ -27,20 +27,20 @@ function LoginPage(props) {
 
     const handleLogin = (e) => {
         if (validateEmail(loginEmail) && validatePassword(loginPassword)) {
-            navigate('/user');
+            navigate('/company');
         }
     };
 
     const handleSignup = (e) => {
         if (validateEmail(signupEmail) && validatePassword(signupPassword) && signupPassword === signupPasswordConfirm) {
-            navigate('/');
+            navigate('/company');
         }
     };
 
     return (
         <div className="login_screen">
             <section className="forms-section">
-                <h1 className="section-title">{props.name} Credentials Page</h1>
+                <h1 className="section-title">Company Credentials Page</h1>
                 <div className="forms">
                     <div className={`form-wrapper ${activeForm === 'login' ? 'is-active' : ''}`}>
                         <button
@@ -136,4 +136,4 @@ function LoginPage(props) {
     );
 }
 
-export default LoginPage;
+export default CompanyLoginPage;
