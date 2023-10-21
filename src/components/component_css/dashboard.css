@@ -128,6 +128,30 @@
     align-items: center;
 }
 
+.menu-item select {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    align-items: center;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.menu-item option {
+    background: #34495e;
+    font-size: 1rem;
+    border: none;
+    color: #ecf0f1;
+}
+
+.menu-item select:focus {
+    outline: none;
+    border: none;
+}
+
+
 .menu-item .icon i {
     font-size: 1rem;
 }

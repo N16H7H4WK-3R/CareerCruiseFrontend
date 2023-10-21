@@ -14,7 +14,12 @@ function EmployerDashboard() {
                         <h3>Preferences</h3>
                         <ul className="menu">
                             <li className="menu-item">
-                                <div className="icon"><i aria-hidden="true" className="ti ti-world"></i></div><span>Country</span>
+                                <div className="icon"><i aria-hidden="true" className="ti ti-world"></i></div>
+                                <select>
+                                    <option value="country1"><i aria-hidden="true" className="ti ti-world"></i>India</option>
+                                    <option value="country2">USA</option>
+                                    <option value="country3">Russia</option>
+                                </select>
                             </li>
                             <li className="menu-item">
                                 <div className="icon"><i aria-hidden="true" className="ti ti-line"></i></div><span>Role</span>
