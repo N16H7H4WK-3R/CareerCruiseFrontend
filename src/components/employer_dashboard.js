@@ -1,5 +1,5 @@
 import React from 'react'
-import './component_css/employer_dashboard.css'
+import './component_css/dashboard.css'
 
 function EmployerDashboard() {
     return (
@@ -25,7 +25,7 @@ function EmployerDashboard() {
                         </ul>
                     </div>
                     <div className="group">
-                        <h3>ABOUT ME</h3>
+                        <h3>About Me</h3>
                         <ul className="menu">
                             <li className="menu-item">
                                 <div className="icon"><i aria-hidden="true" className="ti ti-user"></i></div><span>My Account</span>
